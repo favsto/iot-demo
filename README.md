@@ -56,7 +56,7 @@ cd $home
 
 ### Create pubsub topic
 ```shell
-gcloud beta pubsub topics create $topic
+gcloud pubsub topics create $topic
 ```
 
 ### Configure IAM account for Cloud IoT
@@ -104,7 +104,7 @@ bq mk -t $table message:string,city:string,temperature:float,hour:integer
 
 Enable DataFlow apis, then run the pipeline using PubSub-2-BigQuery Template
 ```shell
-gcloud service-management enable dataflow.googleapis.com
+gcloud services enable dataflow.googleapis.com
 ```
 
 ```shell
